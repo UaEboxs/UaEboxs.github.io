@@ -21168,8 +21168,8 @@ const jx = Et.View.extend({
 \r
 		<div class="pt-page-off state-draw drawful-page">\r
 			<!-- <div class="container"> -->\r
-				<span id="drawful-prompt" class='prompt drawful-text'>please draw:</span><br />\r
-				<span id="drawful-instructions" class='instructions drawful-text'>a picture of yourself!</span><br />\r
+				<span id="drawful-prompt" class='prompt drawful-text'>Будь ласка, намалюйте:</span><br />\r
+				<span id="drawful-instructions" class='instructions drawful-text'>фотографію себе!</span><br />\r
 \r
 				<canvas class="sketchpad" width='240' height='300' style='background-color:white;'>\r
 					Sorry, your browser is not supported.\r
