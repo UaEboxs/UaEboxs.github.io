@@ -24353,7 +24353,7 @@ ${t}`
             PASSWORD_REQUIRED_BODY: "Будь ласка, введіть пароль, або зайдіть за глядача",
             PASSWORD_JOIN_AS_PLAYER: "Зайти за гравця",
             PASSWORD_JOIN_AS_AUDIENCE: "Йдемо за глядачем",
-            ROOM_CODE: "КОД КОМНАТИ",
+            ROOM_CODE: "КОД КІМНАТИ",
             ROOM_CODE_PLACEHOLDER: "ВВЕДИ 4-ЁХ ЗНАЧНЫЙ КОД"
         },
         dee = "Link to Jackbox Games Homepage",
