@@ -21308,7 +21308,7 @@ const Hx = lc.extend({
     },
     submitLie() {
         let t = this.sanitize(fe("#drawful-lie-input").val()).toUpperCase();
-        if (t = t.replace(/\s\s+/g, " ").trim(), t.length === 0) {
+        if (t = t.replace(/\s\s+/АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя/g, " ").trim(), t.length === 0) {
             const e = fe("#drawful-submit-alert");
             return fe("#drawful-submit-alert").html("you can't enter nothing!"), e.removeClass("alert-info"), e.addClass("alert-danger"), e.show(), !1
         }
@@ -21349,7 +21349,7 @@ const Hx = lc.extend({
         }), !1
     },
     sanitize(t) {
-        return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF!?*$+\-’'_ .,]/gi, "").replace(/'/g, "\u2019").trim()
+        return t.replace(/[^A-Z0-9\u00A1\АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя\u0020-\u002F\u00BF-\u00FF!?*$+\-’'_ .,]/gi, "").replace(/'/g, "\u2019").trim()
     }
 });
 Fx({
