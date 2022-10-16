@@ -50,27 +50,9 @@
         },        
         {
             "start": "2021-08-13",
-            "text": "Поддержите нас",
+            "text": "Підтримайте нас",
             "src": "https://jaebox.ga/BanImages/boosty.png",
             "href": "https://boosty.to/aestudios"
-        },
-        {
-            "start": "2021-07-23",
-            "text": "Группа ВК",
-            "src": "https://jaebox.ga/BanImages/vk.png",
-            "href": "https://vk.com/public206410535"
-        },
-        {
-            "start": "2021-07-23",
-            "text": "Тизер уже на канале!",
-            "src": "https://jaebox.ga/BanImages/rolemodels.png",
-            "href": "https://www.youtube.com/watch?v=JiZXWo2zDTw"
-        },
-        {
-            "start": "2021-07-23",
-            "text": "Уже доступен!",
-            "src": "https://jaebox.ga/BanImages/impostersdrawn.png",
-            "href": "https://www.youtube.com/watch?v=PlSCe1CRSTE"
         }
     ],
 
