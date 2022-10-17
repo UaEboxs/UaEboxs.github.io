@@ -24354,7 +24354,7 @@ ${t}`
             PASSWORD_JOIN_AS_PLAYER: "Зайти за гравця",
             PASSWORD_JOIN_AS_AUDIENCE: "Йдемо за глядачем",
             ROOM_CODE: "КОД КІМНАТИ",
-            ROOM_CODE_PLACEHOLDER: "ВВЕДИ 4-ЁХ ЗНАЧНЫЙ КОД"
+            ROOM_CODE_PLACEHOLDER: "ВВЕДИ 4-ОХ ЗНАЧНИЙ КОД"
         },
         dee = "Link to Jackbox Games Homepage",
         hee = {
