@@ -8039,7 +8039,7 @@ const fl = class {
         return String(e).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     }
     static sanitize(e) {
-        const n = this.sanitizeInput(e).replace(/'/gАаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя, "\u2019");
+        const n = this.sanitizeInput(e).replace(/'/g, "\u2019");
         return this.htmlEscape(n).trim()
     }
     static sanitizeName(e) {
@@ -17238,9 +17238,9 @@ const lc = Et.View.extend({
             })
         },
         activateContentIdFromInput(t) {
-            (t.getSanitizedValue().replace(АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя/[^A-Za-zАаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя]/gi, "АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
+            (t.getSanitizedValue().replace(/[^A-Za-zАаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
                 activateContentId: !0,
-                contentId: t.getSanitizedValue().replace(АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя/[^A-Za-zАаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя]/gi, "АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя").toUpperCase()
+                contentId: t.getSanitizedValue().replace(/[^A-Za-zАаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя]/gi, "").toUpperCase()
             }), kt.close())
         },
         onChildviewChildviewCharacterClick(t) {
