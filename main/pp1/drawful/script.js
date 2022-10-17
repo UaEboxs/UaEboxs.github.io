@@ -17238,9 +17238,9 @@ const lc = Et.View.extend({
             })
         },
         activateContentIdFromInput(t) {
-            (t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
+            (t.getSanitizedValue().replace(/[^A-Za-zАаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
                 activateContentId: !0,
-                contentId: t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase()
+                contentId: t.getSanitizedValue().replace(/[^A-Za-zАаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя]/gi, "").toUpperCase()
             }), kt.close())
         },
         onChildviewChildviewCharacterClick(t) {
@@ -21349,7 +21349,7 @@ const Hx = lc.extend({
         }), !1
     },
     sanitize(t) {
-        return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF!?*$+\-’'_ .,]/gi, "").replace(/'/g, "\u2019").trim()
+        return t.replace(/[^A-Z0-9\АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя\u00A1\u0020-\u002F\u00BF-\u00FF!?*$+\-’'_ .,]/gi, "").replace(/'/g, "\u2019").trim()
     }
 });
 Fx({
