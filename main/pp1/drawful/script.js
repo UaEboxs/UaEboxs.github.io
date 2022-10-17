@@ -21078,10 +21078,10 @@ const jx = Et.View.extend({
 			<div class="container">\r
 				<br /><span id="drawful-lobby-text" class='drawful-text'></span><br />\r
 				<form class="pure-form">					\r
-					<button type="button" id="drawful-startgame" class="button-drawful button-xlarge pure-button pure-input-1">everybody's in</button>\r
-					<button type="button" id="drawful-stopcountdown" class="button-drawful button-xlarge pure-button pure-input-1">cancel</button>\r
-					<button type="button" id="drawful-sameplayers" class="button-drawful button-xlarge pure-button pure-input-1 drawful-endbuttons">same players</button>\r
-					<button type="button" id="drawful-newplayers" class="button-drawful button-xlarge pure-button pure-input-1 drawful-endbuttons">new players</button>	\r
+					<button type="button" id="drawful-startgame" class="button-drawful button-xlarge pure-button pure-input-1">всi тут</button>\r
+					<button type="button" id="drawful-stopcountdown" class="button-drawful button-xlarge pure-button pure-input-1">скасувати</button>\r
+					<button type="button" id="drawful-sameplayers" class="button-drawful button-xlarge pure-button pure-input-1 drawful-endbuttons">Деякі Гравці</button>\r
+					<button type="button" id="drawful-newplayers" class="button-drawful button-xlarge pure-button pure-input-1 drawful-endbuttons">Нові Гравці</button>	\r
 				</form>\r
 			</div>\r
 		</div>\r
@@ -21101,13 +21101,13 @@ const jx = Et.View.extend({
 		<div class="pt-page-off state-drawing-sent drawful-page">\r
 			<div class="container">\r
 				<br /><span id="drawful-drawing-received" class='drawful-text'></span><br />\r
-				<span class='drawful-text'>thanks for your drawing</span><br />\r
+				<span class='drawful-text'>дякуємо за ваш малюнок</span><br />\r
 			</div>\r
 		</div>\r
 \r
 		<div class="pt-page-off state-drawing-done drawful-page">\r
 			<div class="container">\r
-				<br /><span class='drawful-text'>drawing time is over!</span><br />\r
+				<br /><span class='drawful-text'>час малювання закінчився!</span><br />\r
 			</div>\r
 		</div>		\r
 \r
@@ -21119,10 +21119,10 @@ const jx = Et.View.extend({
 				<div id="drawful-submit-alert" class="alert alert-info">Alert message goes here</div>\r
 				<form class="pure-form" id="drawful-enterlie-field">\r
 					<div class="pure-u-1">\r
-						<input id="drawful-lie-input" name="drawful-lie" class="pure-input-1 jbg-input" type="text" maxlength="45" placeholder="enter a title" autocapitalize="off" autocorrect="off" autocomplete="off">\r
+						<input id="drawful-lie-input" name="drawful-lie" class="pure-input-1 jbg-input" type="text" maxlength="45" placeholder="введіть назву" autocapitalize="off" autocorrect="off" autocomplete="off">\r
 					</div>\r
 					<div class="pure-u-1 right">\r
-						<button type="submit" id="drawful-submitlie" class="button-drawful button-xlarge pure-button right"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;send</button>\r
+						<button type="submit" id="drawful-submitlie" class="button-drawful button-xlarge pure-button right"><i class="fas fa-paper-plane"></i>відправити</button>\r
 						<div id="drawful-submitlie-loading" class="button-drawful-loading right" style="display:none; width: 110px; height: 48px; margin-top:10px;" ></div>\r
 					</div>\r
 				</form>\r
@@ -21150,13 +21150,13 @@ const jx = Et.View.extend({
 \r
 		<div class="pt-page-off state-liereceived drawful-page">\r
 			<div class="container">\r
-				<br /><span class='drawful-text'>title entered!<br />waiting for other players.</span><br />\r
+				<br /><span class='drawful-text'>Назва введена!<br />в очікуванні інших гравців.</span><br />\r
 			</div>\r
 		</div>\r
 \r
 		<div class="pt-page-off state-lyingdone drawful-page">\r
 			<div class="container">\r
-				<br /><span class='drawful-text'>done!</span><br />\r
+				<br /><span class='drawful-text'>Зроблено!</span><br />\r
 			</div>\r
 		</div>		\r
 \r
@@ -21168,14 +21168,14 @@ const jx = Et.View.extend({
 \r
 		<div class="pt-page-off state-draw drawful-page">\r
 			<!-- <div class="container"> -->\r
-				<span id="drawful-prompt" class='prompt drawful-text'>please draw:</span><br />\r
-				<span id="drawful-instructions" class='instructions drawful-text'>a picture of yourself!</span><br />\r
+				<span id="drawful-prompt" class='prompt drawful-text'>будь ласка, намалюйте:</span><br />\r
+				<span id="drawful-instructions" class='instructions drawful-text'>фотографію себе!</span><br />\r
 \r
 				<canvas class="sketchpad" width='240' height='300' style='background-color:white;'>\r
 					Sorry, your browser is not supported.\r
 				</canvas>\r
 				<form class="pure-form container">\r
-					<button type="submit" id="drawful-submitdrawing" class="submit-drawing button-drawful button-large pure-button pure-input-1" style="margin-top: 0px;"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;send</button>\r
+					<button type="submit" id="drawful-submitdrawing" class="submit-drawing button-drawful button-large pure-button pure-input-1" style="margin-top: 0px;"><i class="fas fa-paper-plane"></i>відправити</button>\r
 					<div id="drawful-submitdrawing-loading" style="display:none;" class="button-drawful-loading"></div>\r
 				</form>				\r
 			<!-- </div> -->\r
@@ -21186,7 +21186,7 @@ const jx = Et.View.extend({
 const Hx = lc.extend({
     template: at.template(zx),
     lacksAudience: !0,
-    authorMessages: ["you drew this. think about what you've done.", "you drew this. relax.", "you drew this. wait for everyone to figure out what you did.", "you drew this. there's no taking that back.", "you drew this. take a breather.", "you drew this. you are all-powerful.", "you drew this. how do you feel about it?", "you drew this. this is your fault.", "you drew this. it's... good?", "you drew this. all hail you!", "you drew this. let's see what happens."],
+    authorMessages: ["Ти це намалював. подумай, що ти зробив", "Ти це намалював. розслабся", "Ти це намалював. зачекай, поки всі розберуться, що ти зробив", "Ти це намалював. цього не повернути", "Ти це намалював. зроби перепочинок. ", "ти це намалював. ти всемогутній.", "ти це намалював. як ти до цього ставишся?", "ти це намалював. це твоя вина.", "ти це намалював. це... добре?", "ти це намалював. всі вітають тебе!", "ти це намалював. подивимося, що з цього вийде."],
     events: {
         "click #drawful-startgame": "startGame",
         "click #drawful-stopcountdown": "stopCountdown",
